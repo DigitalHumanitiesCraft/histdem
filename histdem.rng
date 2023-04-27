@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://www.tei-c.org/ns/1.0" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="TEI">
+      <element name="teiHeader">
+        <attribute>
+          <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+          <data type="NCName"/>
+        </attribute>
+        <element name="fileDesc">
+          <element name="titleStmt">
+            <ref name="title"/>
+            <oneOrMore>
+              <element name="editor">
+                <attribute name="ana">
+                  <data type="NMTOKEN"/>
+                </attribute>
+                <ref name="persName"/>
+              </element>
+            </oneOrMore>
+            <ref name="respStmt"/>
+            <element name="funder">
+              <attribute name="ana">
+                <data type="NMTOKEN"/>
+              </attribute>
+              <ref name="orgName"/>
+              <element name="num">
+                <text/>
+              </element>
+            </element>
+          </element>
+          <element name="publicationStmt">
+            <ref name="publisher"/>
+            <element name="authority">
+              <attribute name="ana">
+                <data type="NMTOKEN"/>
+              </attribute>
+              <ref name="orgName"/>
+            </element>
+            <element name="distributor">
+              <attribute name="ana">
+                <data type="NMTOKEN"/>
+              </attribute>
+              <ref name="orgName"/>
+            </element>
+            <element name="availability">
+              <element name="licence">
+                <attribute name="target">
+                  <data type="anyURI"/>
+                </attribute>
+                <text/>
+              </element>
+            </element>
+            <ref name="date"/>
+            <element name="pubPlace">
+              <attribute name="ana">
+                <data type="NMTOKEN"/>
+              </attribute>
+              <data type="NCName"/>
+            </element>
+            <element name="idno">
+              <attribute name="type">
+                <value>PID</value>
+              </attribute>
+              <data type="NMTOKEN"/>
+            </element>
+          </element>
+          <element name="seriesStmt">
+            <oneOrMore>
+              <ref name="title"/>
+            </oneOrMore>
+            <oneOrMore>
+              <ref name="respStmt"/>
+            </oneOrMore>
+          </element>
+          <element name="sourceDesc">
+            <oneOrMore>
+              <element name="bibl">
+                <optional>
+                  <attribute name="type">
+                    <choice>
+                      <value>citation</value>
+                      <value>data</value>
+                      <value>additional</value>
+                    </choice>
+                  </attribute>
+                </optional>
+                <optional>
+                  <oneOrMore>
+                    <element name="author">
+                      <text/>
+                    </element>
+                  </oneOrMore>
+                  <oneOrMore>
+                    <ref name="title"/>
+                  </oneOrMore>
+                  <ref name="publisher"/>
+                </optional>
+                <zeroOrMore>
+                  <ref name="date"/>
+                </zeroOrMore>
+                <choice>
+                  <oneOrMore>
+                    <element name="rs">
+                      <attribute name="type">
+                        <choice>
+                          <value>citation_recommendation</value>
+                          <value>codes</value>
+                          <value>labels</value>
+                          <value>sample</value>
+                          <value>literature</value>
+                          <value>scan</value>
+                          <value>map</value>
+                        </choice> 
+                      </attribute>
+                      <oneOrMore>
+                        <choice>
+                          <text/>
+                          <ref name="title"/>
+                          <element name="graphic">
+                            <attribute name="mimeType"/>
+                            <attribute name="url">
+                              <data type="NCName"/>
+                            </attribute>
+                            <attribute>
+                              <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+                              <data type="NCName"/>
+                            </attribute>
+                          </element>
+                          <element name="hi">
+                            <attribute name="rend">
+                              <data type="NCName"/>
+                            </attribute>
+                            <text/>
+                          </element>
+                          <element name="media">
+                            <attribute name="mimeType"/>
+                            <attribute name="url">
+                              <data type="NCName"/>
+                            </attribute>
+                            <attribute>
+                              <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+                              <data type="NCName"/>
+                            </attribute>
+                          </element>
+                        </choice>
+                      </oneOrMore>
+                    </element>
+                  </oneOrMore>
+                  <group>
+                    <element name="country">
+                      <attribute name="ana">
+                        <value>marcrelator:prp</value>
+                      </attribute>
+                      <attribute name="ref">
+                        <data type="NMTOKEN"/>
+                      </attribute>
+                      <data type="NCName"/>
+                    </element>
+                    <optional>
+                      <element name="region">
+                        <attribute name="ana">
+                          <value>marcrelator:prp</value>
+                        </attribute>
+                        <attribute name="ref">
+                          <data type="NMTOKEN"/>
+                        </attribute>
+                        <data type="NCName"/>
+                      </element>
+                    </optional>
+                  </group>
+                </choice>
+              </element>
+            </oneOrMore>
+          </element>
+        </element>
+        <element name="encodingDesc">
+          <element name="projectDesc">
+            <element name="ab">
+              <oneOrMore>
+                <element name="ref">
+                  <attribute name="target">
+                    <data type="NMTOKEN"/>
+                  </attribute>
+                  <attribute name="type">
+                    <data type="NCName"/>
+                  </attribute>
+                  <text/>
+                </element>
+              </oneOrMore>
+            </element>
+            <oneOrMore>
+              <ref name="p"/>
+            </oneOrMore>
+          </element>
+          <element name="listPrefixDef">
+            <oneOrMore>
+              <element name="prefixDef">
+                <attribute name="ident">
+                  <data type="NCName"/>
+                </attribute>
+                <attribute name="matchPattern"/>
+                <attribute name="replacementPattern">
+                  <data type="anyURI"/>
+                </attribute>
+                <ref name="p"/>
+              </element>
+            </oneOrMore>
+          </element>
+        </element>
+        <element name="profileDesc">
+          <element name="langUsage">
+            <oneOrMore>
+              <element name="language">
+                <attribute name="ident">
+                  <data type="language"/>
+                </attribute>
+                <data type="NCName"/>
+              </element>
+            </oneOrMore>
+          </element>
+          <element name="textClass">
+            <element name="keywords">
+              <element name="list">
+                <oneOrMore>
+                  <element name="item">
+                    <element name="term">
+                      <text/>
+                    </element>
+                  </element>
+                </oneOrMore>
+              </element>
+            </element>
+          </element>
+        </element>
+      </element>
+      <element name="text">
+        <element name="body">
+          <element name="head">
+            <text/>
+          </element>
+          <oneOrMore><ref name="p"/></oneOrMore>
+          <element name="note">
+            <text/>
+          </element>
+        </element>
+      </element>
+    </element>
+  </start>
+  <define name="title">
+    <element name="title">
+      <optional>
+        <attribute name="level">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ref">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute>
+          <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+          <data type="language"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="persName">
+    <element name="persName">
+      <element name="forename">
+        <data type="NCName"/>
+      </element>
+      <element name="surname">
+        <data type="NCName"/>
+      </element>
+    </element>
+  </define>
+  <define name="respStmt">
+    <element name="respStmt">
+      <attribute name="ana">
+        <data type="NMTOKEN"/>
+      </attribute>
+      <element name="resp">
+        <text/>
+      </element>
+      <choice>
+        <ref name="orgName"/>
+        <ref name="persName"/>
+      </choice>
+    </element>
+  </define>
+  <define name="orgName">
+    <element name="orgName">
+      <optional>
+        <attribute name="corresp">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ref">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="publisher">
+    <element name="publisher">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="orgName"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="date">
+    <element name="date">
+      <optional>
+        <attribute name="ana">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="from">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="to">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="when">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <data type="NMTOKEN"/>
+    </element>
+  </define>
+  <define name="p">
+    <element name="p">
+      <text/>
+    </element>
+  </define>
+</grammar>
