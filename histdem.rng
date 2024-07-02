@@ -9,7 +9,7 @@
         </attribute>
         <element name="fileDesc">
           <element name="titleStmt">
-            <ref name="title"/>
+            <oneOrMore><ref name="title"/></oneOrMore>
             <oneOrMore>
               <element name="editor">
                 <attribute name="ana">
