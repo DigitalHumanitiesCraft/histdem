@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="histdem.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title>Nr. 262: 1879 Census of Montenegro</title>
+            <editor ana="marcrelator:edt">
+               <persName>
+                  <forename>Srđan Pejović et</forename>
+                  <surname>al</surname>
+               </persName>
+            </editor>
+            <respStmt ana="marcrelator:mrk">
+               <resp>XML encoding</resp>
+               <persName>
+                  <forename>Christian</forename>
+                  <surname>Steiner</surname>
+               </persName>
+            </respStmt>
+            <funder ana="marcrelator:fnd">
+               <orgName ref="https://www.fwf.ac.at/de/">Austrian Science Fund (FWF)</orgName>
+               <num>P 38285-G</num>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName corresp="http://geschichte.uni-graz.at/">Institut für Geschichte, Universität Graz</orgName>
+            </publisher>
+            <authority ana="marcrelator:his">
+               <orgName corresp="https://dhcraft.org">Digital Humanities Craft OG</orgName>
+            </authority>
+            <authority ana="marcrelator:his">
+               <orgName ref="https://digital-humanities.uni-graz.at">Institut für Digitale Geisteswissenschaften, Universität Graz</orgName>
+            </authority>
+            <distributor ana="marcrelator:rps">
+               <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
+            </distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
+            </availability>
+            <date when="2025" ana="dcterms:issued">2025</date>
+            <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+            <idno type="PID">o:histdem.262</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="de" ref="https://gams.uni-graz.at/histdem">Demografie und soziale Strukturen im historischen Südosteuropa</title>
+            <title xml:lang="en" ref="https://gams.uni-graz.at/histdem">Demography and Society in Historical Southeastern Europe</title>
+            <respStmt ana="marcrelator:pdr">
+               <resp>Project director</resp>
+               <persName>
+                  <forename>Siegfried</forename>
+                  <surname>Gruber</surname>
+               </persName>
+            </respStmt>
+            <respStmt ana="marcrelator:rth">
+               <resp>Software developement</resp>
+               <orgName ref="https://dhcraft.org/">Digital Humanities Craft OG</orgName>
+            </respStmt>
+         </seriesStmt>
+         <sourceDesc>
+            <bibl>
+               <date when="1879" ana="dcterms:created">1879</date>
+               <country ana="marcrelator:prp" ref="wd:Q236">Montenegro</country>
+            </bibl>
+            <bibl type="citation">
+               <author>Srđan Pejović et al</author>
+               <title level="a">1879 Census of Montenegro</title>
+               <title level="s">Mosaic Historical Microdata File</title>
+               <publisher>www.censusmosaic.org</publisher>
+               <date>2024</date>
+               <rs type="citation_recommendation">
+                  Srđan Pejović et al. 
+                  <hi rend="italic">1879 Census of Montenegro, Version 4.0</hi>
+                   [Mosaic Historical Microdata File]. www.censusmosaic.org, 2024.
+               </rs>
+            </bibl>
+            <bibl type="data">
+               <rs type="codes">
+                  <title>Montenegrin Census 1879: Data with Codes</title>
+                  <media url="../datafile_262_Montenegro_1879/datafile_262_Montenegro_1879_version_4-0_codes.csv" mimeType="text/csv" xml:id="datafile_262_Montenegro_1879_version_4_0_codes"/>
+               </rs>
+               <rs type="labels">
+                  <title>Montenegrin Census 1879: Data with Labels</title>
+                  <media url="../datafile_262_Montenegro_1879/datafile_262_Montenegro_1879_version_4-0_labels.csv" mimeType="text/csv" xml:id="datafile_262_Montenegro_1879_version_4_0_labels"/>
+               </rs>
+            </bibl>
+            <bibl type="additional">
+               <rs type="literature">
+                  <title>published transcription of the 1879 Census of Montenegro</title>
+                  <media url="../datafile_262_Montenegro_1879/First_page_1879_Census_of_Montenegro.pdf" mimeType="application/pdf" xml:id="First_page_1879_Census_of_Montenegro"/>
+               </rs>
+               <rs type="scan">
+                  <title>Sample of the 1879 Census Manuscript</title>
+                  <graphic url="../datafile_262_Montenegro_1879/sample page of 1879 Census of Montenegro.jpg" mimeType="image/jpeg" xml:id="sample_page_of_1879_Census_of_Montenegro"/>
+               </rs>
+               <rs type="map">
+                  <title>Regional Map with Surviving Census Data</title>
+                  <graphic url="../datafile_262_Montenegro_1879/Montenegro_1879_map.jpg" mimeType="image/jpeg" xml:id="Montenegro_1879_map"/>
+               </rs>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <ab>
+               <ref target="context:histdem" type="context">histdem root context</ref>
+            </ab>
+            <p>Historical demography in and about Southeastern Europe is still less developed compared to the leading centers of this research, which are mainly located in Northwestern Europe. Historical surveys of this region often deal with this topic only very marginally; there is also no publication yet that deals exclusively with this topic in Southeastern Europe during the last two centuries - there are only publications on the population history or historical demography of a single country or of Europe as a whole. The studies available so far on regional differences in the historical demography of a country or between individual occupational groups concern the only database of representative rural and urban populations in Southeastern Europe: Albania based on the 1918 census. This project will allow similar studies in other countries of this region and comparative studies between these countries. For this purpose, samples of all other countries in Southeastern Europe will be created, including urban populations on a large scale.</p>
+            <p>The following research questions will be answered: What regional differences in fertility and nuptiality existed in historical Southeastern Europe? What regional differences existed in historical household structures and cohabitation within a household in Southeastern Europe? What regional differences existed in terms of family patriarchal structures? What differences do individual occupational groups show in terms of marriage patterns and household formation and fertility? Which influencing factors were mainly responsible for these differences?</p>
+            <p>In a first step, archives in the countries of Southeastern Europe will be searched for existing manuscripts of censuses up to World War 1. From these, a selection will then be made that is as representative as possible in order to study urban and rural families and different regions within each country. The selected individuals and families are then entered into a database and coded based on key characteristics (gender, marital status, relationship, occupation, religion).</p>
+            <p>The microdata will be coded based on existing coding systems (IPUMS, NAPP, Mosaic, HISCO), thus ensuring that the new data will subsequently be comparable to existing data. Analyses will be based on the child-woman ratio, the Singulate Mean Age at Marriage (SMAM), the proportion remaining unmarried, the age gap between spouses, the patriarchy index and measures of cohabitation (dyadic relationships - who lives with whom?).</p>
+            <p>This project will create the largest European database of historical census data outside the already established centers of historical-demographic research. Studies based on this large-scale expanded database will shed light on previously obscure areas of Southeastern Europe with respect to historical demography, household structures, and family patriarchy. The new data will be made available to the international research community free of charge (open access) and this should create additional opportunities for research, including research questions that are not part of historical demography. Collaboration in research should be encouraged, and the gap between state-level analyses and village studies should be bridged by regional-level analyses.</p>
+         </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+               <p>Taxonomie Rollen MARC</p>
+            </prefixDef>
+            <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
+               <p>DCterms</p>
+            </prefixDef>
+            <prefixDef ident="wd" matchPattern="(Q\d+)" replacementPattern="https://www.wikidata.org/entity/$1">
+               <p>Wikidata</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="sr">Serbian</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>
+                     <term>Montenegro</term>
+                  </item>
+                  <item>
+                     <term>census data</term>
+                  </item>
+                  <item>
+                     <term>19th century</term>
+                  </item>
+                  <item>
+                     <term>population</term>
+                  </item>
+                  <item>
+                     <term>1879</term>
+                  </item>
+                  <item>
+                     <term>COUNTRY DATA</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Montenegro 1879: 54,661 persons, 10,889 households</head>
+         <p>The 1879 population census data of Montenegro was provided as part of the research project 'Demography and Society in Historical Southeastern Europe' (principle investigator: Mag. Dr. Siegfried Gruber) at the Institute of History, University of Graz, Mozartgasse 3, 8010 Graz, Austria, and funded by the Austrian Science Fund (FWF, project no. P 34285-G). An official request was made by Mag. Dr. Siegfried Gruber to Srđan Pejović, who agreed to provide a transcription of the Montenegrin Census of 1879 in a MS Word file. The transcription has been turned into a database and coded according to the Mosaic standard in Graz, Austria, by Mag. Dr. Siegfried Gruber and Daniel-Armin Đumić, MA. This cooperation was adopted and approved by the State Archive of Montenegro in 2020 while the above research project was still in the planning phase. No restrictions were imposed.</p>
+         <note>The last 150 pages of Book 1 of the census have the symbol "-II-" instead of the last names of all household members except the heads, and in some cases, their spouses. Determining the correct related variable is a significantly difficult task.</note>
+      </body>
+   </text>
+</TEI>

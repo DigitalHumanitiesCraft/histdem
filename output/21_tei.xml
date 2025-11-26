@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="histdem.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title>Nr. 21: 1918 Census of Albania</title>
+            <editor ana="marcrelator:edt">
+               <persName>
+                  <forename>Siegfried</forename>
+                  <surname>Gruber</surname>
+               </persName>
+            </editor>
+            <editor ana="marcrelator:edt">
+               <persName>
+                  <forename>Karl</forename>
+                  <surname>Kaser</surname>
+               </persName>
+            </editor>
+            <editor ana="marcrelator:edt">
+               <persName>
+                  <forename>Gentiana</forename>
+                  <surname>Kera</surname>
+               </persName>
+            </editor>
+            <respStmt ana="marcrelator:mrk">
+               <resp>XML encoding</resp>
+               <persName>
+                  <forename>Christian</forename>
+                  <surname>Steiner</surname>
+               </persName>
+            </respStmt>
+            <funder ana="marcrelator:fnd">
+               <orgName ref="https://www.fwf.ac.at/de/">Austrian Science Fund (FWF)</orgName>
+               <num>P 38285-G</num>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName corresp="http://geschichte.uni-graz.at/">Institut für Geschichte, Universität Graz</orgName>
+            </publisher>
+            <authority ana="marcrelator:his">
+               <orgName corresp="https://dhcraft.org">Digital Humanities Craft OG</orgName>
+            </authority>
+            <authority ana="marcrelator:his">
+               <orgName ref="https://digital-humanities.uni-graz.at">Institut für Digitale Geisteswissenschaften, Universität Graz</orgName>
+            </authority>
+            <distributor ana="marcrelator:rps">
+               <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
+            </distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
+            </availability>
+            <date when="2025" ana="dcterms:issued">2025</date>
+            <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+            <idno type="PID">o:histdem.21</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="de" ref="https://gams.uni-graz.at/histdem">Demografie und soziale Strukturen im historischen Südosteuropa</title>
+            <title xml:lang="en" ref="https://gams.uni-graz.at/histdem">Demography and Society in Historical Southeastern Europe</title>
+            <respStmt ana="marcrelator:pdr">
+               <resp>Project director</resp>
+               <persName>
+                  <forename>Siegfried</forename>
+                  <surname>Gruber</surname>
+               </persName>
+            </respStmt>
+            <respStmt ana="marcrelator:rth">
+               <resp>Software developement</resp>
+               <orgName ref="https://dhcraft.org/">Digital Humanities Craft OG</orgName>
+            </respStmt>
+         </seriesStmt>
+         <sourceDesc>
+            <bibl>
+               <date when="1918" ana="dcterms:created">1918</date>
+               <country ana="marcrelator:prp" ref="wd:Q222">Albania</country>
+            </bibl>
+            <bibl type="citation">
+               <author>Siegfried Gruber</author>
+               <author>Karl Kaser</author>
+               <author>Gentiana Kera</author>
+               <author>Enriketa Pandelejmoni</author>
+               <title level="a">1918 Census of Albania</title>
+               <title level="s">Mosaic Historical Microdata File</title>
+               <publisher>mosaic.ipums.org</publisher>
+               <date>2024</date>
+               <rs type="citation_recommendation">
+                  Siegfried Gruber, Karl Kaser, Gentiana Kera, Enriketa Pandelejmoni. 
+                  <hi rend="italic">1918 Census of Albania, Version 1.1</hi>
+                   [Mosaic Historical Microdata File]. mosaic.ipums.org, 2024.
+               </rs>
+            </bibl>
+            <bibl type="data">
+               <rs type="codes">
+                  <title>Census Albania 1918: Data with Codes</title>
+                  <media url="../datafile_21_Albania_1918/datafile_21_Albania_1918_version_1-0_codes.csv" mimeType="text/csv" xml:id="datafile_21_Albania_1918_version_1_0_codes"/>
+               </rs>
+               <rs type="labels">
+                  <title>Census Albania 1918: Data with Labels</title>
+                  <media url="../datafile_21_Albania_1918/datafile_21_Albania_1918_version_1-0_labels.csv" mimeType="text/csv" xml:id="datafile_21_Albania_1918_version_1_0_labels"/>
+               </rs>
+            </bibl>
+            <bibl type="additional">
+               <rs type="scan">
+                  <title>Sample of the 1918 Census of Albania</title>
+                  <graphic url="../datafile_21_Albania_1918/preview_pic.jpg" mimeType="image/jpeg" xml:id="preview_pic"/>
+               </rs>
+               <rs type="map">
+                  <title>Map of transcribed settlements of the 1918 census of Albania</title>
+                  <media url="../datafile_21_Albania_1918/Karte erfasste Orte.pdf" mimeType="application/pdf" xml:id="Karte_erfasste_Orte"/>
+               </rs>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <ab>
+               <ref target="context:histdem" type="context">histdem root context</ref>
+            </ab>
+            <p>Historical demography in and about Southeastern Europe is still less developed compared to the leading centers of this research, which are mainly located in Northwestern Europe. Historical surveys of this region often deal with this topic only very marginally; there is also no publication yet that deals exclusively with this topic in Southeastern Europe during the last two centuries - there are only publications on the population history or historical demography of a single country or of Europe as a whole. The studies available so far on regional differences in the historical demography of a country or between individual occupational groups concern the only database of representative rural and urban populations in Southeastern Europe: Albania based on the 1918 census. This project will allow similar studies in other countries of this region and comparative studies between these countries. For this purpose, samples of all other countries in Southeastern Europe will be created, including urban populations on a large scale.</p>
+            <p>The following research questions will be answered: What regional differences in fertility and nuptiality existed in historical Southeastern Europe? What regional differences existed in historical household structures and cohabitation within a household in Southeastern Europe? What regional differences existed in terms of family patriarchal structures? What differences do individual occupational groups show in terms of marriage patterns and household formation and fertility? Which influencing factors were mainly responsible for these differences?</p>
+            <p>In a first step, archives in the countries of Southeastern Europe will be searched for existing manuscripts of censuses up to World War 1. From these, a selection will then be made that is as representative as possible in order to study urban and rural families and different regions within each country. The selected individuals and families are then entered into a database and coded based on key characteristics (gender, marital status, relationship, occupation, religion).</p>
+            <p>The microdata will be coded based on existing coding systems (IPUMS, NAPP, Mosaic, HISCO), thus ensuring that the new data will subsequently be comparable to existing data. Analyses will be based on the child-woman ratio, the Singulate Mean Age at Marriage (SMAM), the proportion remaining unmarried, the age gap between spouses, the patriarchy index and measures of cohabitation (dyadic relationships - who lives with whom?).</p>
+            <p>This project will create the largest European database of historical census data outside the already established centers of historical-demographic research. Studies based on this large-scale expanded database will shed light on previously obscure areas of Southeastern Europe with respect to historical demography, household structures, and family patriarchy. The new data will be made available to the international research community free of charge (open access) and this should create additional opportunities for research, including research questions that are not part of historical demography. Collaboration in research should be encouraged, and the gap between state-level analyses and village studies should be bridged by regional-level analyses.</p>
+         </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+               <p>Taxonomie Rollen MARC</p>
+            </prefixDef>
+            <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
+               <p>DCterms</p>
+            </prefixDef>
+            <prefixDef ident="wd" matchPattern="(Q\d+)" replacementPattern="https://www.wikidata.org/entity/$1">
+               <p>Wikidata</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="sq">Albanian</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>
+                     <term>Albania</term>
+                  </item>
+                  <item>
+                     <term>census</term>
+                  </item>
+                  <item>
+                     <term>20th century</term>
+                  </item>
+                  <item>
+                     <term>1918</term>
+                  </item>
+                  <item>
+                     <term>population</term>
+                  </item>
+                  <item>
+                     <term>demography</term>
+                  </item>
+                  <item>
+                     <term>microdata</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Albania 1918: 140,611 persons, 27,792 households</head>
+         <p>The census of 1918 resulted from the occupation of the majority of the territory of the newly created independent Albanian state (except parts in the south and southeast) by the Austro-Hungarian army in 1916. Officers of the Austro-Hungarian army collected the census data with the assistance of Albanian officers from March to July 1918. Most of the manuscripts have been saved from destruction and are now stored in the archive of the Austrian Academy of Sciences. The research project, "The 1918 Albanian Population Census: Data Entry and Basic Analyses," based at the University of Graz and funded by the Austrian Science Fund (2000-2003), sought to convert the data into machine-readable form. Up to now, the data of 285 villages and six cities have been entered in a database. The data consists of two samples: -100% -sample of the urban population; villages containing Orthodox Christians and ethnic minorities; villages being characterized by an uneven sex-ratio or very large or very small households -10% -sample of all other villages</p>
+         <note>The data has to be weighted to represent the population of the prefectures, which have been used as sampling strata. The variable hhwt does not account for religion, because this variable has not been used in the sampling process and is based on the published population. The variable perwt does account for religion and is based on the enumerated population. Further information can be found at the website https://albanischevolkszaehlung.uni-graz.at/</note>
+      </body>
+   </text>
+</TEI>

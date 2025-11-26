@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="histdem.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title>Nr. 153: 1900 Household Registers fo the Bulgarian Rhodope Mountain area</title>
+            <editor ana="marcrelator:edt">
+               <persName>
+                  <forename>Ulf</forename>
+                  <surname>Brunnbauer</surname>
+               </persName>
+            </editor>
+            <respStmt ana="marcrelator:mrk">
+               <resp>XML encoding</resp>
+               <persName>
+                  <forename>Christian</forename>
+                  <surname>Steiner</surname>
+               </persName>
+            </respStmt>
+            <funder ana="marcrelator:fnd">
+               <orgName ref="https://www.fwf.ac.at/de/">Austrian Science Fund (FWF)</orgName>
+               <num>P 38285-G</num>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName corresp="http://geschichte.uni-graz.at/">Institut für Geschichte, Universität Graz</orgName>
+            </publisher>
+            <authority ana="marcrelator:his">
+               <orgName corresp="https://dhcraft.org">Digital Humanities Craft OG</orgName>
+            </authority>
+            <authority ana="marcrelator:his">
+               <orgName ref="https://digital-humanities.uni-graz.at">Institut für Digitale Geisteswissenschaften, Universität Graz</orgName>
+            </authority>
+            <distributor ana="marcrelator:rps">
+               <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
+            </distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
+            </availability>
+            <date when="2025" ana="dcterms:issued">2025</date>
+            <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+            <idno type="PID">o:histdem.153</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="de" ref="https://gams.uni-graz.at/histdem">Demografie und soziale Strukturen im historischen Südosteuropa</title>
+            <title xml:lang="en" ref="https://gams.uni-graz.at/histdem">Demography and Society in Historical Southeastern Europe</title>
+            <respStmt ana="marcrelator:pdr">
+               <resp>Project director</resp>
+               <persName>
+                  <forename>Siegfried</forename>
+                  <surname>Gruber</surname>
+               </persName>
+            </respStmt>
+            <respStmt ana="marcrelator:rth">
+               <resp>Software developement</resp>
+               <orgName ref="https://dhcraft.org/">Digital Humanities Craft OG</orgName>
+            </respStmt>
+         </seriesStmt>
+         <sourceDesc>
+            <bibl>
+               <date from="1877" to="1947" ana="dcterms:created">1877-1947</date>
+               <country ana="marcrelator:prp" ref="wd:Q219">Bulgaria</country>
+               <region ana="marcrelator:prp" ref="wd:Q6489">Rhodope mountains</region>
+            </bibl>
+            <bibl type="citation">
+               <author>Ulf Brunnbauer</author>
+               <title level="a">1900 Household Registers fo the Bulgarian Rhodope Mountain area</title>
+               <title level="s">Mosaic Historical Microdata File</title>
+               <publisher>mosaic.ipums.org</publisher>
+               <date>2025</date>
+               <rs type="citation_recommendation">
+                  Ulf Brunnbauer. 
+                  <hi rend="italic">1900 Household Registers of the Bulgarian Rhodope Mountain area, Version 1.2</hi>
+                   [Mosaic Historical Microdata File]. mosaic.ipums.org, 2025.
+               </rs>
+            </bibl>
+            <bibl type="data">
+               <rs type="codes">
+                  <title>Bulgarian Rhodope Mountain Area: Data with Codes</title>
+                  <media url="../datafile_153_Rhodope_mountains_around_1900/datafile_153_Version_1.2_codes.csv" mimeType="text/csv" xml:id="datafile_153_Version_1_2_codes"/>
+               </rs>
+               <rs type="labels">
+                  <title>Bulgarian Rhodope Mountain Area: Data with Labels</title>
+                  <media url="../datafile_153_Rhodope_mountains_around_1900/datafile_153_Version_1.2_labels.csv" mimeType="text/csv" xml:id="datafile_153_Version_1_2_labels"/>
+               </rs>
+            </bibl>
+            <bibl type="additional">
+               <rs type="literature">
+                  <title>article about the data and analysis of the data</title>
+                  <media url="../datafile_153_Rhodope_mountains_around_1900/article_Brunnbauer.pdf" mimeType="application/pdf" xml:id="article_Brunnbauer"/>
+               </rs>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <ab>
+               <ref target="context:histdem" type="context">histdem root context</ref>
+            </ab>
+            <p>Historical demography in and about Southeastern Europe is still less developed compared to the leading centers of this research, which are mainly located in Northwestern Europe. Historical surveys of this region often deal with this topic only very marginally; there is also no publication yet that deals exclusively with this topic in Southeastern Europe during the last two centuries - there are only publications on the population history or historical demography of a single country or of Europe as a whole. The studies available so far on regional differences in the historical demography of a country or between individual occupational groups concern the only database of representative rural and urban populations in Southeastern Europe: Albania based on the 1918 census. This project will allow similar studies in other countries of this region and comparative studies between these countries. For this purpose, samples of all other countries in Southeastern Europe will be created, including urban populations on a large scale.</p>
+            <p>The following research questions will be answered: What regional differences in fertility and nuptiality existed in historical Southeastern Europe? What regional differences existed in historical household structures and cohabitation within a household in Southeastern Europe? What regional differences existed in terms of family patriarchal structures? What differences do individual occupational groups show in terms of marriage patterns and household formation and fertility? Which influencing factors were mainly responsible for these differences?</p>
+            <p>In a first step, archives in the countries of Southeastern Europe will be searched for existing manuscripts of censuses up to World War 1. From these, a selection will then be made that is as representative as possible in order to study urban and rural families and different regions within each country. The selected individuals and families are then entered into a database and coded based on key characteristics (gender, marital status, relationship, occupation, religion).</p>
+            <p>The microdata will be coded based on existing coding systems (IPUMS, NAPP, Mosaic, HISCO), thus ensuring that the new data will subsequently be comparable to existing data. Analyses will be based on the child-woman ratio, the Singulate Mean Age at Marriage (SMAM), the proportion remaining unmarried, the age gap between spouses, the patriarchy index and measures of cohabitation (dyadic relationships - who lives with whom?).</p>
+            <p>This project will create the largest European database of historical census data outside the already established centers of historical-demographic research. Studies based on this large-scale expanded database will shed light on previously obscure areas of Southeastern Europe with respect to historical demography, household structures, and family patriarchy. The new data will be made available to the international research community free of charge (open access) and this should create additional opportunities for research, including research questions that are not part of historical demography. Collaboration in research should be encouraged, and the gap between state-level analyses and village studies should be bridged by regional-level analyses.</p>
+         </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+               <p>Taxonomie Rollen MARC</p>
+            </prefixDef>
+            <prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1">
+               <p>DCterms</p>
+            </prefixDef>
+            <prefixDef ident="wd" matchPattern="(Q\d+)" replacementPattern="https://www.wikidata.org/entity/$1">
+               <p>Wikidata</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="bg">BG</language>
+         </langUsage>
+         <textClass>
+            <keywords>
+               <list>
+                  <item>
+                     <term>Bulgaria</term>
+                  </item>
+                  <item>
+                     <term>Rhodope mountains</term>
+                  </item>
+                  <item>
+                     <term>register</term>
+                  </item>
+                  <item>
+                     <term>19th century</term>
+                  </item>
+                  <item>
+                     <term>population</term>
+                  </item>
+                  <item>
+                     <term>demography</term>
+                  </item>
+                  <item>
+                     <term>microdata</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Bulgaria, Rhodope mountains around 1900: 8,373 persons, 1,718 households</head>
+         <p>This is a sample of eight villages of the Bulgarian side of the Rhodope mountains, covering the time period of 1877 to 1947. The sample contains Orthodox Bulgarians and Bulgarian-speaking Muslims (Pomaks). The three samples of Čepelare in the 20th century do not contain the whole population, but about 100 households each. This data file was transcribed by Ulf Brunnbauer and additional information about this data is available in the following publications: Ulf Brunnbauer, Families and mountains in the Balkans: Christian and Muslim household structures in the Rhodopes, 19th-20th century. In: The History of the Family 7 (2002) 327-350.  Ulf Brunnbauer, Gebirgsgesellschaften auf dem Balkan: Wirtschaft und Familienstrukturen im Rhodopengebirge (19./20. Jahrhundert). Zur Kunde Südosteuropas II/34. Wien, Köln, Weimar: 2004.</p>
+         <note>Occupations are not coded yet.</note>
+      </body>
+   </text>
+</TEI>
