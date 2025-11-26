@@ -1,0 +1,16 @@
+# Data folders
+allgemein/
+datafile_*/
+
+# Backup files from image compression
+*.backup
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Validation reports
+validation_report.txt
+
+# Log files
+*.log
