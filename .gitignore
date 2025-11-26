@@ -14,3 +14,5 @@ validation_report.txt
 
 # Log files
 *.log
+
+.claude
